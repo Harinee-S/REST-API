@@ -233,28 +233,3 @@ func createConnection() {
 	panic("unimplemented")
 }
 
-/*func UpdateUser(w http.ResponseWriter, r *http.Request) {
-	params := mux.Vars(r)
-
-	email := params["email"]
-
-	var response = JsonResponse{}
-
-	if email == "" {
-		response = JsonResponse{Type: "error", Message: "You are missing users parameter."}
-	} else {
-		db := setupDB()
-
-		_, err := db.Exec("UPDATE Signupinv SET fullname=$2, num=$3, promo_code=$4 WHERE email=$1; returning *", email)
-
-		printMessage("Updating user from DB")
-
-		checkErr(err)
-
-		response = JsonResponse{Type: "success", Message: "The user has been updateed successfully!"}
-	}
-
-	json.NewEncoder(w).Encode(response)
-
-}
-*/
