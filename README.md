@@ -1,2 +1,2 @@
 # REST-API
-Build a REST-API using Golang and PostgreSQL
+Build a CRUD operation using REST-API in Golang and PostgreSQL
